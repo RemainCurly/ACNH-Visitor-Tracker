@@ -18,11 +18,7 @@ public class acnhFileIO
 		
 		for(int i = 0; i < tfs.length; i++)
 		{
-			/*if(tfs[i].getText().equals(""))
-				continue;
-			else if(!acnhValid.visitorExists(tfs[i].getText()))
-				tfs[i].setText("*non-visitor*");*/
-			if(tfs[i].getText().equals("") && !acnhValid.visitorExists(tfs[i].getText()))
+			if(tfs[i].getText().equals("") || !acnhValid.visitorExists(tfs[i].getText()))
 				tfs[i].setText("#");
 		}
 		
